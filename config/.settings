@@ -1,0 +1,16 @@
+{
+    "projectName": "SalesforceGit",
+    "username": "lightning@mio.com",
+    "id": "0adfaeb0-f0bf-11e6-b06f-c3ed70a44832",
+    "namespace": "",
+    "environment": "developer",
+    "loginUrl": "https://login.salesforce.com/",
+    "workspace": "D:\\Usuarios\\Ismael\\Documents",
+    "subscription": [
+        "ApexClass",
+        "ApexComponent",
+        "ApexPage",
+        "ApexTrigger",
+        "StaticResource"
+    ]
+}
