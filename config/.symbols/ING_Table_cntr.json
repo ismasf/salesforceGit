@@ -1,0 +1,62 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p0Y000008O11zQAC",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p0Y000008O11zQAC",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 3
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getDatos",
+            "parameters": [
+                {
+                    "name": "sentencia",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        }
+    ],
+    "name": "ING_Table_cntr",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "ING_Table_cntr",
+        "references": [],
+        "type": "ING_Table_cntr"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 3
+            },
+            "modifiers": [],
+            "name": "sentencia",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

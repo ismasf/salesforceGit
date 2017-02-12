@@ -1,0 +1,84 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p0Y000007SS3jQAG",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p0Y000007SS3jQAG",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 3
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getContacts",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 8
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getPrimary",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        }
+    ],
+    "name": "PDF_01_ContactController",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "PDF_01_ContactController",
+        "references": [],
+        "type": "PDF_01_ContactController"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "lstContactos",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "lstContactos",
+            "references": [],
+            "type": "LIST"
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+<aura:component controller="LookupComponentCtrl" implements="force:appHostable,force:lightningQuickAction">
+  <aura:attribute name="accountN" type="Account" default="{ 'sobjectType': 'Account',
+                                                                 'Contact': '',
+                                                                 }"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:attribute name="colObject" type="String" /> 
+	<aura:attribute name="lstAccount" type="Object[]" />
+    
+    <div class="slds-form-element slds-lookup" data-select="single">
+  <label class="slds-form-element__label" for="lookup-2144">Account Name</label>
+  <div class="slds-form-element__control">
+    <div class="slds-input-has-icon slds-input-has-icon--right">
+      <input type="search" id="lookup-2144" 
+             class="slds-lookup__search-input slds-input" 
+             placeholder="Search Accounts" 
+             aria-owns="lookup-2144" role="combobox" 
+             aria-activedescendant="" 
+             aria-expanded="false" aria-autocomplete="list" 
+             
+             value="{!v.accountN.Contact}" />
+        <ul class="slds-lookup__list" role="listbox">
+            <aura:iteration items="{!v.lstAccount}" var="row">
+      <li role="presentation">
+        <span class="slds-lookup__item-action slds-media" id="lookup-option-2146" role="option">
+          
+          <div class="slds-media__body">
+            <div class="slds-lookup__result-text">{!row.Name}</div>
+            <span class="slds-lookup__result-meta slds-text-body--small">{!row.Name}</span>
+          </div>
+        </span>
+      </li>
+                </aura:iteration>
+        </ul>
+        
+        ____________________________
+        
+        
+    </div>
+  </div>
+  </div>
+</aura:component>

@@ -11,6 +11,13 @@
         "ApexComponent",
         "ApexPage",
         "ApexTrigger",
+        "AppMenu",
+        "AuraDefinitionBundle",
+        "CustomApplication",
+        "CustomLabels",
+        "CustomMetadata",
+        "CustomObject",
+        "CustomTab",
         "StaticResource"
     ]
 }

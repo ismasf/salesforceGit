@@ -1,0 +1,22 @@
+<aura:component implements="force:appHostable" controller="PDF_01_ContactController">
+	<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+	<!-- Dynamically load the list of contacts -->
+	<aura:attribute name="contacts" type="Contact[]"/>
+
+	<ui:inputSelect aura:id="selection" change="{!c.select}">
+		<ui:inputSelectOption text="All Contacts" label="All Contacts"/>
+		<ui:inputSelectOption text="All Primary" label="All Primary"/>
+	</ui:inputSelect>
+
+	<!-- Display record create page when button is clicked -->
+	<ui:button label="New Contact" press="{!c.createRecord}"/>
+
+	<!-- Iterate over the list of contacts and display them -->
+	<aura:iteration var="contact" items="{!v.contacts}">
+		<!-- If you’re using a namespace, replace with myNamespace:contactList -->
+		<c:PDF_01_contactList contact="{!contact}"/>
+	</aura:iteration>
+
+
+</aura:component>

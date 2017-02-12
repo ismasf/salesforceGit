@@ -1,0 +1,37 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:hasRecordId" access="global" controller="ING_Table_cntr">
+	<aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+	<aura:handler event="aura:doneWaiting" action="{!c.doneRendering}"/>
+	<aura:attribute name="lstCol" type="String[]" default="['Id','Nombre']" />
+	<aura:attribute name="lstDatosCoger" type="String[]" default="['Id','Name']" />
+	<aura:attribute name="datoTable" type="sObject[]" default="[{'Name': 'Test'},{'Name2':'Test2'}]"/>
+	<aura:attribute name="datoTable2" type="sObject" default="{'fila':[['cel1','cel2'],['cel3','cel4']]}"/>
+	<aura:attribute name="datoTable3" type="sObject" default="{'fila':[['cel1','cel2'],['cel3','cel4']]}"/>
+	<aura:attribute name="sentenciaSQL" type="String" default="SELECT Id, Name FROM Opportunity LIMIT 10" />
+
+	<table class="slds-table slds-table--bordered slds-table--cell-buffer slds-border--left">
+		<thead>
+			<tr class="slds-text-title--caps">
+				<aura:iteration items="{!v.lstCol}" var="item">
+					<td>
+						<div class="slds-truncate">
+							{!item}
+						</div>
+					</td>
+				</aura:iteration>
+			</tr>
+		</thead>
+		<tbody>
+			<aura:iteration items="{!v.datoTable2.fila}" var="fila">
+				<tr>
+					<aura:iteration items="{!fila}" var="celda">
+						<td>
+							{!celda}
+						</td>
+					</aura:iteration>
+				</tr>
+			</aura:iteration>
+		</tbody>
+	</table>
+	
+
+</aura:component>

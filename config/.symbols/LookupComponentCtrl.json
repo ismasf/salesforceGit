@@ -1,0 +1,45 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p0Y000008MMl7QAG",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p0Y000008MMl7QAG",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 3
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "traerD",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        }
+    ],
+    "name": "LookupComponentCtrl",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "LookupComponentCtrl",
+        "references": [],
+        "type": "LookupComponentCtrl"
+    },
+    "variables": []
+}
