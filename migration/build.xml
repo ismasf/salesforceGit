@@ -13,6 +13,18 @@
 	<target name="retrieve">
    		<sf:retrieve username="${username}" password="${password}" serverurl="${serverurl}" retrieveTarget="../src"  unpackaged="../src/package.xml"/>
 	</target>
+	
+    <target name="deploy">
+      
+      <sf:deploy username="${username}" password="${password}" serverurl="${serverurl}" deployroot="../src">
+        <runTest>*</runTest>
+      </sf:deploy>
+    </target>
+	
+	<target name="undeployCode">
+      <sf:deploy username="${username}" password="${password}" serverurl=
+            "${serverurl}" deployroot="../src"/>
+	</target>
 
 
 </project>
