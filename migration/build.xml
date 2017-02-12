@@ -4,11 +4,15 @@
     <property environment="env"/>
 
 	<target name="test">
-      <sf:deploy username="${username}" password="${password}" serverurl="${serverurl}" deployRoot="./" runAllTests="true" />
+      <sf:deploy username="${username}" password="${password}" serverurl="${serverurl}" deployRoot="../src" runAllTests="true" />
     </target>
 
 	<target name="clean">
       <sf:deploy username="${username}" password="${password}" serverurl="${serverurl}" deployRoot="clean" />
     </target>
+	<target name="retrieve">
+   		<sf:retrieve username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" retrieveTarget="../src"  unpackaged="."/>
+	</target>
+
 
 </project>
