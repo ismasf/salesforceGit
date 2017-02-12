@@ -16,8 +16,7 @@
 	
     <target name="deploy">
       
-      <sf:deploy username="${username}" password="${password}" serverurl="${serverurl}" deployroot="../src">
-        <runTest>*</runTest>
+      <sf:deploy username="${username}" password="${password}" serverurl="${serverurl}" deployroot="../src" runAllTests="true">
       </sf:deploy>
     </target>
 	
